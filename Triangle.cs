@@ -36,7 +36,7 @@
         {
             if(sideA >= sideB + sideC || sideB >= sideC + sideA || sideC >= sideA + sideB)
             {
-                throw new Exception("Треугольника с такими сторонами не существует");
+                throw new ArgumentException("Треугольника с такими сторонами не существует");
             }
 
             Sides = new double[3] { sideA, sideB, sideC };
